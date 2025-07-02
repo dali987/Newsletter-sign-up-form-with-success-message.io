@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="card email-entry">
+        <picture>
+            <source media="(max-width: 500px)" srcset="assets/images/illustration-sign-up-mobile.svg">
+            <source media="(max-width: 850px)" srcset="assets/images/illustration-sign-up-tablet.svg">
+            <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
+        </picture>
+        <div class="text-part">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul>
+                <li>Product discovery and building what matters</li>
+                <li>Measuring to ensure updates are a success</li>
+                <li>And much more!</li>
+            </ul>
+            <form id="form" novalidate>
+                <div class="name-error">
+                    <label for="email">Email address</label>
+                    <span class="error-text">Valid email required</span>
+                </div>
+                <input type="email" name="email" placeholder="email@company.com" autocomplete="off">
+                <button class="submit"><span>Subscribe to monthly newsletter</span></button>
+            </form>
+        </div>
+    </main>
+    <section class="card success">
+        <div class="details">
+            <img src="assets/images/icon-success.svg" alt="">
+            <h1>Thanks for subscribing!</h1>
+            <p>A confirmation email has been sent to <span>EMAIL</span>. Please open it and click the button inside to confirm your subscription</p>
+        </div>
+        
+        <button><span>Dismiss</span></button>
+    </section>
+
+</body>
+</html>
